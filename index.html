@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER_DOCS // Security Research Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    
+    <header class="terminal-header">
+        <div class="container">
+            <div class="header-top">
+                <span class="blink">█</span>
+                <span class="glitch" data-text="CYBER_DOCS">CYBER_DOCS</span>
+            </div>
+            <div class="header-status">
+                <span class="status-item">STATUS: <span class="active">ACTIVE</span></span>
+                <span class="status-item">UPLINK: <span class="active">SECURED</span></span>
+                <span class="status-item">SYSTEM: <span class="active">OPERATIONAL</span></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-prompt">
+                <span class="prompt-symbol">root@docs:~$</span>
+                <span class="nav-links">
+                    <a href="#home" class="nav-link">[HOME]</a>
+                    <a href="#assignments" class="nav-link">[ASSIGNMENTS]</a>
+                    <a href="#research" class="nav-link">[RESEARCH]</a>
+                    <a href="#tools" class="nav-link">[TOOLS]</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section" id="home">
+                <div class="terminal-window">
+                    <div class="terminal-header-bar">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                        <span class="terminal-title">security_research.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="command">whoami</span></p>
+                        <p class="terminal-output">cybersecurity_researcher</p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="command">cat mission.txt</span></p>
+                        <p class="terminal-output glow">▸ Documenting cybersecurity research</p>
+                        <p class="terminal-output glow">▸ Exploring vulnerabilities & defense mechanisms</p>
+                        <p class="terminal-output glow">▸ Building a knowledge base for the future</p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="command typing">access_archive...</span><span class="blink">█</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="assignments-grid" id="assignments">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    <span class="glitch-small" data-text="ASSIGNMENTS">ASSIGNMENTS</span>
+                    <span class="title-bracket">]</span>
+                </h2>
+                
+                <div class="doc-grid">
+                    <!-- Assignment Card 1 -->
+                    <div class="doc-card">
+                        <div class="card-header">
+                            <span class="card-id">ASSIGNMENT_001</span>
+                            <span class="card-status active">ACTIVE</span>
+                        </div>
+                        <h3 class="card-title">Network Penetration Testing</h3>
+                        <p class="card-desc">Comprehensive analysis of network vulnerabilities and exploitation techniques</p>
+                        <div class="card-meta">
+                            <span class="meta-item">📅 2024.03.15</span>
+                            <span class="meta-item">🔒 Severity: HIGH</span>
+                        </div>
+                        <a href="docs/assignment1.html" class="card-link">
+                            <span>ACCESS_FILE</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Assignment Card 2 -->
+                    <div class="doc-card">
+                        <div class="card-header">
+                            <span class="card-id">ASSIGNMENT_002</span>
+                            <span class="card-status pending">PENDING</span>
+                        </div>
+                        <h3 class="card-title">Web Application Security</h3>
+                        <p class="card-desc">OWASP Top 10 vulnerabilities and mitigation strategies</p>
+                        <div class="card-meta">
+                            <span class="meta-item">📅 2024.03.22</span>
+                            <span class="meta-item">🔒 Severity: CRITICAL</span>
+                        </div>
+                        <a href="docs/assignment2.html" class="card-link">
+                            <span>ACCESS_FILE</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Assignment Card 3 -->
+                    <div class="doc-card">
+                        <div class="card-header">
+                            <span class="card-id">ASSIGNMENT_003</span>
+                            <span class="card-status pending">PENDING</span>
+                        </div>
+                        <h3 class="card-title">Cryptography Analysis</h3>
+                        <p class="card-desc">Modern encryption methods and cryptographic protocol analysis</p>
+                        <div class="card-meta">
+                            <span class="meta-item">📅 2024.04.01</span>
+                            <span class="meta-item">🔒 Severity: MEDIUM</span>
+                        </div>
+                        <a href="docs/assignment3.html" class="card-link">
+                            <span>ACCESS_FILE</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+
+                    <!-- Add Assignment Card -->
+                    <div class="doc-card add-card">
+                        <div class="add-icon">+</div>
+                        <p class="add-text">Upload New Assignment</p>
+                        <p class="add-subtext">Add your next security research document</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section" id="tools">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    <span class="glitch-small" data-text="TOOLBOX">TOOLBOX</span>
+                    <span class="title-bracket">]</span>
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <span class="tool-icon">🔍</span>
+                        <span class="tool-name">Nmap</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">🛡️</span>
+                        <span class="tool-name">Wireshark</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">⚔️</span>
+                        <span class="tool-name">Metasploit</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">🔐</span>
+                        <span class="tool-name">Burp Suite</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="terminal-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <span class="prompt">$</span> Built with ⚡ for cybersecurity research
+                    <span class="separator">|</span>
+                    <span class="blink">█</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Random glitch effect on title
+        function glitchEffect() {
+            const glitchElements = document.querySelectorAll('.glitch');
+            glitchElements.forEach(el => {
+                if (Math.random() > 0.95) {
+                    el.style.textShadow = `
+                        ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 0 #00ff41,
+                        ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 0 #ff0080
+                    `;
+                    setTimeout(() => {
+                        el.style.textShadow = '';
+                    }, 100);
+                }
+            });
+        }
+        setInterval(glitchEffect, 2000);
+    </script>
+</body>
+</html>
