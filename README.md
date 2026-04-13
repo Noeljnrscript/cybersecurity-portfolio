@@ -1,4 +1,4 @@
-# 🔐 CYBER_DOCS - Cybersecurity Documentation Website
+I'm# 🔐 CYBER_DOCS - Cybersecurity Documentation Website
 
 A stylish, hacker-themed documentation website for your cybersecurity assignments and research. Built with HTML, CSS, and vanilla JavaScript - ready to deploy on Vercel!
 
@@ -173,4 +173,4 @@ Your website automatically adjusts to different screen sizes:
 
 **Built with ⚡ for cybersecurity research**
 
-Made by YOU! 🚀
+Made by N∅eljnrscript 🚀
