@@ -1,0 +1,1082 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset1 Segoe UI Symbol;}{\f2\fnil\fcharset1 Cambria Math;}{\f3\fnil Times New Roman;}{\f4\fnil\fcharset1 Segoe UI Symbol;}}
+{\*\generator Riched20 10.0.22621}{\*\mmathPr\mmathFont2\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sl240\slmult1\qj\f0\fs20\lang9 What Are Networking Protocols?\par
+\par
+A network protocol is a set of rules and standards that define how data is transmitted, formatted, and received between devices.\par
+\par
+Think of it like language rules in communication.\par
+\par
+Example:\par
+\par
+When you send a message online, protocols decide:\par
+\par
+how the message is packaged\par
+\par
+where it is sent\par
+\par
+how it is verified\par
+\par
+how it is received\par
+\par
+Without protocols, computers cannot understand each other.\par
+\par
+2. Why Networking Protocols Are Important in Cybersecurity\par
+\par
+Protocols are critical because they affect:\par
+\par
+1\u-497?\f1\u8419?\f0  Data Transmission Security\par
+\par
+They control how data moves across networks.\par
+\par
+Example:\par
+\par
+HTTP \f2\u8594?\f3  \f0 not secure\par
+\par
+HTTPS \f2\u8594?\f3  \f0 encrypted and secure\par
+\par
+2\u-497?\f1\u8419?\f0  Authentication\par
+\par
+Protocols can verify who is allowed to access a network.\par
+\par
+Example:\par
+\par
+Kerberos\par
+\par
+RADIUS\par
+\par
+3\u-497?\f1\u8419?\f0  Encryption\par
+\par
+Some protocols encrypt data to protect confidentiality.\par
+\par
+Example:\par
+\par
+SSL/TLS\par
+\par
+IPsec\par
+\par
+4\u-497?\f1\u8419?\f0  Network Monitoring\par
+\par
+Security teams analyze protocol traffic to detect attacks like:\par
+\par
+Malware communication\par
+\par
+Data exfiltration\par
+\par
+Command & Control traffic\par
+\par
+Tools used:\par
+\par
+Wireshark\par
+\par
+Snort\par
+\par
+Zeek\par
+\par
+3. Protocols and the OSI Model\par
+\par
+Networking protocols operate in layers defined by the OSI model.\par
+\par
+There are 7 layers.\par
+\par
+Layer\tab Function\tab Example Protocols\par
+Application\tab User interaction\tab HTTP, FTP\par
+Presentation\tab Encryption & formatting\tab SSL/TLS\par
+Session\tab Session management\tab NetBIOS\par
+Transport\tab Data delivery\tab TCP, UDP\par
+Network\tab Routing\tab IP, ICMP\par
+Data Link\tab MAC communication\tab ARP\par
+Physical\tab Hardware transmission\tab Ethernet\par
+\par
+Cybersecurity professionals must know which protocol works at which layer.\par
+\par
+4. Major Networking Protocols in Cybersecurity\par
+1\u-497?\f1\u8419?\f0  HTTP (Hypertext Transfer Protocol)\par
+\par
+Purpose:\par
+Transfers web pages between browser and server.\par
+\par
+Example:\par
+\par
+http://example.com\par
+\par
+Problem:\par
+\par
+Data is not encrypted\par
+\par
+Vulnerable to:\par
+\par
+packet sniffing\par
+\par
+session hijacking\par
+\par
+Attack example:\par
+\par
+Man-in-the-Middle attack\par
+\par
+Solution:\par
+Use HTTPS\par
+\par
+2\u-497?\f1\u8419?\f0  HTTPS (Secure HTTP)\par
+\par
+Purpose:\par
+Secure web communication.\par
+\par
+It uses:\par
+\par
+TLS encryption\par
+\par
+Security benefits:\par
+\par
+Data encryption\par
+\par
+Authentication\par
+\par
+Data integrity\par
+\par
+Example attack prevented:\par
+\par
+credential stealing\par
+\par
+3\u-497?\f1\u8419?\f0  TCP (Transmission Control Protocol)\par
+\par
+Purpose:\par
+Ensures reliable data delivery.\par
+\par
+Features:\par
+\par
+Error checking\par
+\par
+Packet ordering\par
+\par
+Connection establishment\par
+\par
+Example:\par
+\par
+Email\par
+\par
+Web browsing\par
+\par
+Security issues:\par
+\par
+TCP SYN Flood attacks\par
+\par
+4\u-497?\f1\u8419?\f0  UDP (User Datagram Protocol)\par
+\par
+Purpose:\par
+Fast but unreliable communication.\par
+\par
+Used for:\par
+\par
+Video streaming\par
+\par
+Online gaming\par
+\par
+VoIP\par
+\par
+Characteristics:\par
+\par
+No connection\par
+\par
+No error checking\par
+\par
+Security risk:\par
+\par
+UDP Flood attacks (DDoS)\par
+\par
+5\u-497?\f1\u8419?\f0  IP (Internet Protocol)\par
+\par
+Purpose:\par
+Provides device addressing and routing.\par
+\par
+Every device has an IP address.\par
+\par
+Example:\par
+\par
+192.168.1.1\par
+\par
+Security concerns:\par
+\par
+IP spoofing\par
+\par
+packet injection\par
+\par
+6\u-497?\f1\u8419?\f0  DNS (Domain Name System)\par
+\par
+Purpose:\par
+Converts domain names into IP addresses.\par
+\par
+Example:\par
+\par
+google.com \f2\u8594?\f3  \f0 142.250.190.78\par
+\par
+Cyber attacks involving DNS:\par
+\par
+DNS spoofing\par
+\par
+DNS poisoning\par
+\par
+DNS tunneling (data exfiltration)\par
+\par
+7\u-497?\f1\u8419?\f0  ARP (Address Resolution Protocol)\par
+\par
+Purpose:\par
+Maps IP address \f2\u8594?\f3  \f0 MAC address.\par
+\par
+Example:\par
+\par
+IP: 192.168.1.5\par
+MAC: 00:1A:2B:3C:4D\par
+\par
+Major attack:\par
+\par
+ARP Spoofing\par
+Used in:\par
+\par
+Man-in-the-middle attacks\par
+\par
+Network interception\par
+\par
+8\u-497?\f1\u8419?\f0  ICMP (Internet Control Message Protocol)\par
+\par
+Purpose:\par
+Used for network diagnostics.\par
+\par
+Example command:\par
+\par
+ping google.com\par
+\par
+Security problems:\par
+\par
+Attackers use ICMP for:\par
+\par
+network scanning\par
+\par
+ICMP flood attacks\par
+\par
+covert data channels\par
+\par
+9\u-497?\f1\u8419?\f0  FTP (File Transfer Protocol)\par
+\par
+Purpose:\par
+Transfers files between systems.\par
+\par
+Example:\par
+\par
+uploading files to servers\par
+\par
+Problem:\par
+\par
+No encryption\par
+\par
+Attack:\par
+\par
+credential sniffing\par
+\par
+Secure alternatives:\par
+\par
+SFTP\par
+\par
+FTPS\par
+\par
+\f4\u-10179?\u-8929?\f3  \f0 SMTP (Simple Mail Transfer Protocol)\par
+\par
+Purpose:\par
+Used to send emails.\par
+\par
+Example:\par
+\par
+mail server \f2\u8594?\f3  \f0 mail server\par
+\par
+Security risks:\par
+\par
+Email spoofing\par
+\par
+Spam\par
+\par
+Phishing\par
+\par
+Security solutions:\par
+\par
+SPF\par
+\par
+DKIM\par
+\par
+DMARC\par
+\par
+5. Secure Networking Protocols\par
+\par
+Security professionals prefer secure protocols.\par
+\par
+Insecure Protocol\tab Secure Version\par
+HTTP\tab HTTPS\par
+FTP\tab SFTP\par
+Telnet\tab SSH\par
+POP3\tab POP3S\par
+IMAP\tab IMAPS\par
+6. Common Protocol Attacks\par
+Man-in-the-Middle Attack\par
+\par
+Attacker intercepts communication between two systems.\par
+\par
+Protocols targeted:\par
+\par
+ARP\par
+\par
+HTTP\par
+\par
+DNS\par
+\par
+DNS Spoofing\par
+\par
+Fake DNS responses redirect users to malicious websites.\par
+\par
+SYN Flood Attack\par
+\par
+Overloads a server by sending many TCP connection requests.\par
+\par
+Packet Sniffing\par
+\par
+Attackers capture network packets to steal:\par
+\par
+passwords\par
+\par
+cookies\par
+\par
+credentials\par
+\par
+Tools:\par
+\par
+Wireshark\par
+\par
+Tcpdump\par
+\par
+7. Protocol Analysis in Cybersecurity\par
+\par
+Cybersecurity professionals analyze protocols using tools like:\par
+\par
+Wireshark\par
+\par
+Captures and analyzes network packets.\par
+\par
+Nmap\par
+\par
+Used for:\par
+\par
+port scanning\par
+\par
+protocol detection\par
+\par
+Snort\par
+\par
+Intrusion Detection System (IDS)\par
+\par
+8. Protocol Ports (Important for Cybersecurity)\par
+\par
+Each protocol uses a port number.\par
+\par
+Protocol\tab Port\par
+HTTP\tab 80\par
+HTTPS\tab 443\par
+FTP\tab 21\par
+SSH\tab 22\par
+DNS\tab 53\par
+SMTP\tab 25\par
+Telnet\tab 23\par
+\par
+Attackers scan ports to find vulnerabilities.\par
+\par
+9. Networking Protocols in Ethical Hacking\par
+\par
+Ethical hackers study protocols to:\par
+\par
+find vulnerabilities\par
+\par
+perform penetration testing\par
+\par
+detect weak configurations\par
+\par
+Example activities:\par
+\par
+Packet sniffing\par
+\par
+DNS enumeration\par
+\par
+TCP scanning\par
+\par
+Protocol fuzzing\par
+\par
+10. Why Networking Protocol Knowledge is Critical for Cybersecurity\par
+\par
+A cybersecurity expert must understand protocols to:\par
+\par
+detect network attacks\par
+\par
+secure communications\par
+\par
+analyze malware traffic\par
+\par
+monitor suspicious network activity\par
+\par
+Many attacks happen at the network level.\par
+\par
+Quick Cybersecurity Revision Summary\par
+\par
+Networking protocols:\par
+\par
+\f1\u10004?\f3  \f0 Control device communication\par
+\f1\u10004?\f3  \f0 Define how data is transmitted\par
+\f1\u10004?\f3  \f0 Provide authentication and encryption\par
+\f1\u10004?\f3  \f0 Can be exploited by attackers\par
+\par
+Major protocols to remember:\par
+\par
+HTTP / HTTPS\par
+\par
+TCP / UDP\par
+\par
+IP\par
+\par
+DNS\par
+\par
+ARP\par
+\par
+ICMP\par
+\par
+FTP\par
+\par
+SMTP\par
+\par
+\f1\u9989?\f3  \f0 If you want, I can also show you:\par
+\par
+The 20 MOST IMPORTANT networking protocols for cybersecurity students\par
+\par
+Networking protocols every ethical hacker must memorize\par
+\par
+How hackers exploit networking protocols (real attack examples)\par
+\par
+Networking protocol cheat sheet for exams and SOC analysts.\par
+\par
+1\par
+\par
+You chose \f3\ldblquote\f0 The 20 most important networking protocols for cybersecurity students.\f3\rdblquote\f0\par
+Understanding these protocols helps you analyze attacks, monitor traffic, and secure networks. I will group them so they are easier to study.\par
+\par
+20 Most Important Networking Protocols in Cybersecurity\par
+1. Web Protocols\par
+1\u-497?\f1\u8419?\f0  HTTP (Hypertext Transfer Protocol)\par
+\par
+Purpose: Transfers web pages between browser and server.\par
+\par
+Example:\par
+\par
+When you open a website, your browser sends an HTTP request to a server.\par
+\par
+Security Issue:\par
+\par
+Data is not encrypted.\par
+\par
+Attackers can sniff usernames and passwords.\par
+\par
+Common Attacks:\par
+\par
+Session hijacking\par
+\par
+Man-in-the-Middle attack\par
+\par
+2\u-497?\f1\u8419?\f0  HTTPS (Hypertext Transfer Protocol Secure)\par
+\par
+Purpose: Secure version of HTTP.\par
+\par
+Uses:\par
+\par
+TLS encryption\par
+\par
+Benefits:\par
+\par
+Data confidentiality\par
+\par
+Authentication\par
+\par
+Integrity\par
+\par
+Used by:\par
+\par
+Online banking\par
+\par
+Secure websites\par
+\par
+2. Transport Protocols\par
+3\u-497?\f1\u8419?\f0  TCP (Transmission Control Protocol)\par
+\par
+Purpose:\par
+Provides reliable data delivery.\par
+\par
+Features:\par
+\par
+Packet ordering\par
+\par
+Error correction\par
+\par
+Handshake connection\par
+\par
+Important Concept:\par
+\par
+TCP 3-Way Handshake\par
+\par
+SYN\par
+\par
+SYN-ACK\par
+\par
+ACK\par
+\par
+Security Attack:\par
+\par
+SYN Flood (DDoS)\par
+\par
+4\u-497?\f1\u8419?\f0  UDP (User Datagram Protocol)\par
+\par
+Purpose:\par
+Fast data transfer without reliability checks.\par
+\par
+Used in:\par
+\par
+Video streaming\par
+\par
+Online gaming\par
+\par
+DNS queries\par
+\par
+Security Risk:\par
+\par
+UDP Flood attacks\par
+\par
+3. Network Protocols\par
+5\u-497?\f1\u8419?\f0  IP (Internet Protocol)\par
+\par
+Purpose:\par
+Provides logical addressing for devices.\par
+\par
+Example IP:\par
+\par
+192.168.1.1\par
+\par
+Security Issues:\par
+\par
+IP spoofing\par
+\par
+Packet manipulation\par
+\par
+6\u-497?\f1\u8419?\f0  ICMP (Internet Control Message Protocol)\par
+\par
+Purpose:\par
+Used for network diagnostics.\par
+\par
+Example command:\par
+\par
+ping google.com\par
+\par
+Security Risks:\par
+\par
+Network reconnaissance\par
+\par
+ICMP flood\par
+\par
+4. Address Resolution Protocol\par
+7\u-497?\f1\u8419?\f0  ARP (Address Resolution Protocol)\par
+\par
+Purpose:\par
+Maps IP address to MAC address.\par
+\par
+Example:\par
+\par
+IP \f2\u8594?\f3  \f0 MAC\par
+\par
+Security Attack:\par
+\par
+ARP Spoofing\par
+\par
+Used in Man-in-the-Middle attacks\par
+\par
+5. Domain Name Protocol\par
+8\u-497?\f1\u8419?\f0  DNS (Domain Name System)\par
+\par
+Purpose:\par
+Converts domain names to IP addresses.\par
+\par
+Example:\par
+\par
+facebook.com \f2\u8594?\f3  \f0 157.240.22.35\par
+\par
+Security Attacks:\par
+\par
+DNS poisoning\par
+\par
+DNS spoofing\par
+\par
+DNS tunneling\par
+\par
+6. Remote Access Protocols\par
+9\u-497?\f1\u8419?\f0  SSH (Secure Shell)\par
+\par
+Purpose:\par
+Secure remote login to systems.\par
+\par
+Example:\par
+\par
+Server administration\par
+\par
+Security Advantage:\par
+\par
+Encrypted communication\par
+\par
+Used heavily by:\par
+\par
+Linux administrators\par
+\par
+Ethical hackers\par
+\par
+\f4\u-10179?\u-8929?\f3  \f0 Telnet\par
+\par
+Purpose:\par
+Remote login protocol.\par
+\par
+Problem:\par
+\par
+No encryption\par
+\par
+Because of this, Telnet is mostly replaced by SSH.\par
+\par
+7. File Transfer Protocols\par
+1\u-497?\f1\u8419?\f0 1\u-497?\f1\u8419?\f0  FTP (File Transfer Protocol)\par
+\par
+Purpose:\par
+Transfer files between computers.\par
+\par
+Problem:\par
+\par
+Passwords sent in plain text\par
+\par
+Common attack:\par
+\par
+Credential sniffing\par
+\par
+1\u-497?\f1\u8419?\f0 2\u-497?\f1\u8419?\f0  SFTP (Secure File Transfer Protocol)\par
+\par
+Secure version of FTP.\par
+\par
+Benefits:\par
+\par
+Encryption\par
+\par
+Secure authentication\par
+\par
+8. Email Protocols\par
+1\u-497?\f1\u8419?\f0 3\u-497?\f1\u8419?\f0  SMTP (Simple Mail Transfer Protocol)\par
+\par
+Purpose:\par
+Sends emails between servers.\par
+\par
+Example:\par
+\par
+mail server \f2\u8594?\f3  \f0 mail server\par
+\par
+Security Issues:\par
+\par
+Email spoofing\par
+\par
+Spam\par
+\par
+Phishing\par
+\par
+1\u-497?\f1\u8419?\f0 4\u-497?\f1\u8419?\f0  POP3 (Post Office Protocol)\par
+\par
+Purpose:\par
+Downloads emails from server to device.\par
+\par
+Security Risk:\par
+\par
+Data interception if not encrypted.\par
+\par
+1\u-497?\f1\u8419?\f0 5\u-497?\f1\u8419?\f0  IMAP (Internet Message Access Protocol)\par
+\par
+Purpose:\par
+Access email directly on server.\par
+\par
+Difference from POP3:\par
+\par
+Emails stay on the server.\par
+\par
+9. Security Protocols\par
+1\u-497?\f1\u8419?\f0 6\u-497?\f1\u8419?\f0  SSL (Secure Socket Layer)\par
+\par
+Purpose:\par
+Encrypt internet communication.\par
+\par
+Used for:\par
+\par
+secure websites\par
+\par
+Note:\par
+Mostly replaced by TLS.\par
+\par
+1\u-497?\f1\u8419?\f0 7\u-497?\f1\u8419?\f0  TLS (Transport Layer Security)\par
+\par
+Purpose:\par
+Provides encryption for:\par
+\par
+HTTPS\par
+\par
+Email\par
+\par
+VPN\par
+\par
+Major security protocol today.\par
+\par
+1\u-497?\f1\u8419?\f0 8\u-497?\f1\u8419?\f0  IPsec (Internet Protocol Security)\par
+\par
+Purpose:\par
+Encrypts IP packets.\par
+\par
+Used in:\par
+\par
+VPN connections\par
+\par
+Security Benefits:\par
+\par
+Confidentiality\par
+\par
+Authentication\par
+\par
+10. Authentication Protocols\par
+1\u-497?\f1\u8419?\f0 9\u-497?\f1\u8419?\f0  Kerberos\par
+\par
+Purpose:\par
+Secure authentication system.\par
+\par
+Used in:\par
+\par
+Windows Active Directory networks\par
+\par
+Benefit:\par
+\par
+Prevents password interception.\par
+\par
+2\u-497?\f1\u8419?\f0 0\u-497?\f1\u8419?\f0  RADIUS\par
+\par
+Purpose:\par
+Centralized authentication for networks.\par
+\par
+Used for:\par
+\par
+WiFi authentication\par
+\par
+VPN access\par
+\par
+Example:\par
+Enterprise network login.\par
+\par
+Why Cybersecurity Experts Must Know These Protocols\par
+\par
+Security professionals analyze these protocols to:\par
+\par
+\f1\u10004?\f3  \f0 detect malware communication\par
+\f1\u10004?\f3  \f0 investigate cyber attacks\par
+\f1\u10004?\f3  \f0 monitor network traffic\par
+\f1\u10004?\f3  \f0 secure enterprise networks\par
+\par
+Most cyber attacks happen through network protocol exploitation.\par
+\par
+Quick Memorization Trick (Cybersecurity Exams)\par
+\par
+Group them:\par
+\par
+Web\par
+\par
+HTTP, HTTPS\par
+\par
+Transport\par
+\par
+TCP, UDP\par
+\par
+Network\par
+\par
+IP, ICMP\par
+\par
+Address Resolution\par
+\par
+ARP\par
+\par
+Domain\par
+\par
+DNS\par
+\par
+Remote Access\par
+\par
+SSH, Telnet\par
+\par
+File Transfer\par
+\par
+FTP, SFTP\par
+\par
+Email\par
+\par
+SMTP, POP3, IMAP\par
+\par
+Security\par
+\par
+SSL, TLS, IPsec\par
+\par
+Authentication\par
+\par
+Kerberos, RADIUS\par
+\par
+\f1\u9989?\f3  \f0 If you're studying cybersecurity or ethical hacking, I can also show you:\par
+\par
+10 networking protocols hackers exploit the most\par
+\par
+How SOC analysts detect attacks through protocols\par
+\par
+The networking protocols used in Kali Linux tools\par
+\par
+A visual diagram of how all protocols work together in a network (very useful for exams).\par
+\par
+4\par
+\par
+You selected \f3\ldblquote\f0 A visual diagram of how networking protocols work together in a network.\f3\rdblquote  \f0 I\f3\rquote\f0 ll explain it step-by-step so you can clearly understand how data travels across the internet using different protocols.\par
+\par
+How Networking Protocols Work Together (Cybersecurity View)\par
+\par
+When you open a website, many protocols work together in layers.\par
+\par
+Example:\par
+You type google.com in your browser.\par
+\par
+The process happens like this:\par
+\par
+User\par
+\f3  \f1\u9474?\f0\par
+\f3  \f1\u9474?\f3  \f0 1. DNS Request\par
+\f3  \f1\u9660?\f0\par
+DNS Server\par
+\f3  \f1\u9474?\f0\par
+\f3  \f1\u9474?\f3  \f0 Returns IP address\par
+\f3  \f1\u9660?\f0\par
+Web Server\par
+\f3  \f1\u9474?\f0\par
+\f3  \f1\u9474?\f3  \f0 Data sent using HTTP/HTTPS\par
+\f3  \f1\u9660?\f0\par
+Your Browser\par
+\par
+But in reality, it is more complex. Let\f3\rquote\f0 s break it down.\par
+\par
+Step-by-Step Protocol Communication\par
+1\u-497?\f1\u8419?\f0  DNS Resolution\par
+\par
+You type:\par
+\par
+www.google.com\par
+\par
+Your computer asks a DNS server:\par
+\par
+\f3\ldblquote\f0 What is the IP address of google.com?\f3\rdblquote\f0\par
+\par
+DNS replies:\par
+\par
+142.250.190.78\par
+\par
+Now your computer knows where to send the request.\par
+\par
+Security Risk:\par
+\par
+DNS spoofing\par
+\par
+DNS poisoning\par
+\par
+2\u-497?\f1\u8419?\f0  ARP Request (Local Network)\par
+\par
+Before sending data, your computer must know the MAC address of the router.\par
+\par
+So it sends:\par
+\par
+ARP Request \f2\u8594?\f3  \f0 Who has 192.168.1.1?\par
+\par
+Router responds with its MAC address.\par
+\par
+Security Risk:\par
+\par
+ARP Spoofing\par
+\par
+Man-in-the-Middle attack\par
+\par
+3\u-497?\f1\u8419?\f0  TCP Connection\par
+\par
+Your computer now establishes a connection using TCP.\par
+\par
+This happens through the 3-way handshake:\par
+\par
+Client \f2\u8594?\f3  \f0 SYN\par
+Server \f2\u8594?\f3  \f0 SYN-ACK\par
+Client \f2\u8594?\f3  \f0 ACK\par
+\par
+This creates a reliable connection.\par
+\par
+Security Risk:\par
+\par
+SYN Flood Attack\par
+\par
+4\u-497?\f1\u8419?\f0  TLS Encryption (for HTTPS)\par
+\par
+If the site uses HTTPS, the browser starts TLS encryption.\par
+\par
+Steps:\par
+\par
+Client Hello\par
+Server Hello\par
+Key Exchange\par
+Secure Channel Established\par
+\par
+Now the communication becomes encrypted.\par
+\par
+Security Benefit:\par
+\par
+Protects passwords\par
+\par
+Prevents packet sniffing\par
+\par
+5\u-497?\f1\u8419?\f0  HTTP/HTTPS Request\par
+\par
+Your browser sends a request:\par
+\par
+GET /index.html HTTP/1.1\par
+\par
+The server responds with:\par
+\par
+HTML\par
+Images\par
+Scripts\par
+Data\par
+\par
+Security Risks:\par
+\par
+Session hijacking\par
+\par
+Cross-site attacks\par
+\par
+Data interception (if HTTP)\par
+\par
+Full Protocol Flow Diagram\par
+\par
+Here is the simplified networking stack:\par
+\par
+Application Layer\par
+\f1\u9474?\f0\par
+\f1\u9474?\f3   \f0 HTTP / HTTPS\par
+\f1\u9474?\f0\par
+Transport Layer\par
+\f1\u9474?\f0\par
+\f1\u9474?\f3   \f0 TCP / UDP\par
+\f1\u9474?\f0\par
+Network Layer\par
+\f1\u9474?\f0\par
+\f1\u9474?\f3   \f0 IP\par
+\f1\u9474?\f0\par
+Data Link Layer\par
+\f1\u9474?\f0\par
+\f1\u9474?\f3   \f0 ARP / MAC\par
+\f1\u9474?\f0\par
+Physical Layer\par
+\f1\u9474?\f0\par
+\f1\u9474?\f3   \f0 Ethernet / WiFi\par
+\par
+Each layer performs a different function in communication.\par
+\par
+Real Example of Protocol Flow\par
+\par
+When visiting a website:\par
+\par
+Browser\par
+\f3    \f1\u9474?\f0\par
+\f3    \f1\u9474?\f3  \f0 DNS\par
+\f3    \f1\u9660?\f0\par
+Find server IP\par
+\f3    \f1\u9474?\f0\par
+\f3    \f1\u9474?\f3  \f0 TCP handshake\par
+\f3    \f1\u9660?\f0\par
+Secure connection (TLS)\par
+\f3    \f1\u9474?\f0\par
+\f3    \f1\u9474?\f3  \f0 HTTP request\par
+\f3    \f1\u9660?\f0\par
+Server sends webpage\par
+\par
+All of this happens in milliseconds.\par
+\par
+Where Hackers Attack in This Process\par
+\par
+Cyber attackers target different protocol stages:\par
+\par
+Stage\tab Protocol\tab Attack\par
+DNS\tab DNS\tab DNS poisoning\par
+Local Network\tab ARP\tab ARP spoofing\par
+Connection\tab TCP\tab SYN flood\par
+Encryption\tab TLS\tab downgrade attacks\par
+Web Traffic\tab HTTP\tab session hijacking\par
+Example Attack Scenario\par
+\par
+Man-in-the-Middle Attack:\par
+\par
+Victim \f2\u8594?\f3  \f0 Attacker \f2\u8594?\f3  \f0 Server\par
+\par
+Attacker uses:\par
+\par
+ARP spoofing\par
+\par
+Packet sniffing\par
+\par
+Fake certificates\par
+\par
+Goal:\par
+Steal login credentials.\par
+\par
+Tools Cybersecurity Analysts Use to Monitor Protocols\par
+\par
+Network monitoring tools analyze protocol traffic:\par
+\par
+Packet analysis:\par
+\par
+Wireshark\par
+\par
+Network scanning:\par
+\par
+Nmap\par
+\par
+Intrusion detection:\par
+\par
+Snort\par
+\par
+These tools help detect:\par
+\par
+suspicious packets\par
+\par
+abnormal traffic\par
+\par
+malware communication\par
+\par
+Quick Memory Trick for Protocol Flow\par
+\par
+Remember this order:\par
+\par
+DNS \f2\u8594?\f3  \f0 ARP \f2\u8594?\f3  \f0 TCP \f2\u8594?\f3  \f0 TLS \f2\u8594?\f3  \f0 HTTP\par
+\par
+Meaning:\par
+\par
+Find server\par
+\par
+Find router\par
+\par
+Create connection\par
+\par
+Secure communication\par
+\par
+Request webpage\lang9\par
+}
+ 
